@@ -1,0 +1,30 @@
+// Colors
+$c-black: #000000;
+$c-white: #FFFFFF;
+
+$c-off-black: #333333;
+$c-off-white: #EFEFEF;
+
+$c-grey: #999999;
+
+$c-blue: #4b85d6;
+$c-red: #da3434;
+
+// Base Font Size
+$base-font-size: 16;
+
+// Function to convert pixels to ems
+@function px-to-em($px, $denominator: $base-font-size) {
+  @return $px / $denominator * 1em;
+}
+
+// Breakpoints
+$bp-tiny: px-to-em(500);
+$bp-small: px-to-em(768);
+$bp-med: px-to-em(1024);
+$bp-large: px-to-em(1400);
+
+// The max-width of the stage on full desktop in pixels
+$max-stage-width: 1400;
+
+$no-query: '.no-mediaqueries';
